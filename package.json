@@ -24,6 +24,7 @@
     "moment": "^2.27.0",
     "node-fetch": "^2.6.0",
     "pretty-error": "^2.1.1",
+    "random-array-ensure": "^1.0.6",
     "recursive-readdir": "^2.2.2"
   }
 }
