@@ -21,6 +21,7 @@
     "discord.js": "^12.2.0",
     "dotenv": "^8.2.0",
     "git-last-commit": "^1.0.0",
+    "moment": "^2.27.0",
     "node-fetch": "^2.6.0",
     "pretty-error": "^2.1.1",
     "recursive-readdir": "^2.2.2"

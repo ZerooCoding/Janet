@@ -8,7 +8,7 @@ export async function run(message, args) {
     const wiki = {
         title: 'The Good Place',
         url: 'thegoodplace.fandom.com'
-    }
+    };
 
     let search_term = args.join(' ');
 

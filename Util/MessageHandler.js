@@ -114,7 +114,7 @@ class MsgHandler {
             }
 
             if (command.help.args.type && command.help.args.type === 'episode') {
-                if (!Util.parseSeriesEpisodeString(args[1])) return message.channel.send(noepisode);
+                if (!Util.parseSeriesEpisodeString(args[0])) return message.channel.send(noepisode);
             }
 
             if (command.help.args.type && command.help.args.type === 'mention') {

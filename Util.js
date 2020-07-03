@@ -184,6 +184,47 @@ class Util {
         let subString = str.substr(0, length - 1);
         return (useWordBoundary ? subString.substr(0, subString.lastIndexOf(' ')) : subString) + '...';
     }
+
+    /**
+     * @summary A low-level method for parsing episode stuff
+     * @param {string} input
+     * @returns {{season: number, episode: number}} The object containing the series and episode details
+     */
+    static parseSeriesEpisodeString(input) {
+        if (!input) return null;
+
+        let str = input.toLowerCase();
+        let seriesString = '';
+        let episodeString = '';
+        let hit_limiter = false;
+
+        for (let letter of str) {
+            if (letter === 's') continue;
+
+            if (letter === 'e' || letter === 'x') {
+                hit_limiter = true;
+                continue;
+            }
+
+            if (!(/^\d+$/.test(letter))) continue;
+
+            if (!hit_limiter) {
+                seriesString += letter;
+            } else {
+                episodeString += letter;
+            }
+        }
+
+        const seriesNumber = Number(seriesString);
+        const episodeNumber = Number(episodeString);
+
+        if (isNaN(seriesNumber) || isNaN(episodeNumber)) return null;
+
+        return {
+            season: seriesNumber,
+            episode: episodeNumber
+        };
+    }
 }
 
 export default Util;
