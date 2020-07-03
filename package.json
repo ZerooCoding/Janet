@@ -1,0 +1,28 @@
+{
+  "name": "janet",
+  "version": "1.0.0",
+  "description": "The Good Place inspired Discord Bot",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "test": "node index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/adrifcastr/Janet.git"
+  },
+  "author": "adrifcastr",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/adrifcastr/Janet/issues"
+  },
+  "homepage": "https://github.com/adrifcastr/Janet#readme",
+  "dependencies": {
+    "discord.js": "^12.2.0",
+    "dotenv": "^8.2.0",
+    "git-last-commit": "^1.0.0",
+    "node-fetch": "^2.6.0",
+    "pretty-error": "^2.1.1",
+    "recursive-readdir": "^2.2.2"
+  }
+}
