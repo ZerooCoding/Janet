@@ -29,6 +29,7 @@ class MsgHandler {
         else if (!cmd) return
 
         const command = process.janet.commands.get(cmd.toLowerCase());
+        if (!command) return;
 
         if (command.help.owner) {
             if (!process.janet.owner) return;
