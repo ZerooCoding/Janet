@@ -25,7 +25,8 @@ class MsgHandler {
         const args = inputString.split(' ').filter(arg => arg);
 
         let cmd = args.shift();
-        if (!cmd) return;
+        if (!cmd && usedPrefix.toLowerCase() === 'hey janet') return message.channel.send(Util.Embed().setTitle('Hi there!').setImage('https://thumbs.gfycat.com/FailingWeakFairybluebird-size_restricted.gif'));
+        else if (!cmd) return
 
         const command = process.janet.commands.get(cmd.toLowerCase());
 

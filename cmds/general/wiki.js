@@ -47,7 +47,7 @@ export async function run(message, args) {
 export const help = {
     name: ['wiki', 'info'],
     type: 'general',
-    help_text: 'wiki [help] <term>',
+    help_text: 'wiki <term>',
     help_desc: 'Searches TGP wiki for the given term',
     owner: false,
     nsfw: false,
