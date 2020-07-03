@@ -34,7 +34,6 @@ export const help = {
     help_text: 'eval <code> :warning:',
     help_desc: 'Evaluates provided code',
     owner: true,
-    nsfw: false,
     args: {force: true},
     roles: [],
     user_perms: [],

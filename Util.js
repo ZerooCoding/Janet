@@ -225,6 +225,17 @@ class Util {
             episode: episodeNumber
         };
     }
+
+    /**
+     * @param {string} input 
+     */
+    static getIdFromString(input) {
+        if (!input) return null;
+
+        for (let item of ['<@!', '<@', '<#', '>']) input = input.replace(item, '');
+
+        return input;
+    }
 }
 
 export default Util;

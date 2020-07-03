@@ -46,11 +46,10 @@ export async function run(message, args) {
 
 export const help = {
     name: ['wiki', 'info'],
-    type: 'general',
+    type: 'main',
     help_text: 'wiki <term>',
     help_desc: 'Searches TGP wiki for the given term',
     owner: false,
-    nsfw: false,
     args: {force: true},
     roles: [],
     user_perms: [],

@@ -18,6 +18,7 @@
   },
   "homepage": "https://github.com/adrifcastr/Janet#readme",
   "dependencies": {
+    "discord-paginationembed": "^2.0.0",
     "discord.js": "^12.2.0",
     "dotenv": "^8.2.0",
     "git-last-commit": "^1.0.0",

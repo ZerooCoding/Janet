@@ -38,11 +38,10 @@ export async function run(message) {
 
 export const help = {
     name: ['kbell', 'kb'],
-    type: 'misc',
+    type: 'main',
     help_text: 'kbell',
     help_desc: 'Displays a random KBell clip',
     owner: false,
-    nsfw: false,
     args: {},
     roles: [],
     user_perms: [],

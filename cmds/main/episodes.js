@@ -45,13 +45,12 @@ export async function run(message, args) {
 }
 export const help = {
     name: ['ep', 'episode'],
-    type: 'general',
+    type: 'main',
     help_text: 'ep <NxNN|SNENN> ~ N -> number',
     help_desc: 'Fetches episode info',
     owner: false,
     voice: false,
     timevault: false,
-    nsfw: false,
     args: {force: true, amount: 1, type: 'episode'},
     roles: [],
     user_perms: [],

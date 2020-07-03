@@ -17,11 +17,10 @@ export async function run(message) {
 
 export const help = {
     name: ['ping', 'latency'],
-    type: 'general',
+    type: 'main',
     help_text: 'ping',
     help_desc: 'Displays the Janet\'s ping',
     owner: false,
-    nsfw: false,
     args: {},
     roles: [],
     user_perms: [],
