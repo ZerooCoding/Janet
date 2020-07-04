@@ -1,4 +1,3 @@
-import Util from '../../Util.js';
 import RandomEnsure from 'random-array-ensure';
 
 /**
@@ -19,9 +18,9 @@ export async function run(message, args) {
 }
 
 export const help = {
-    name: ['can', 'get', 'bring', 'give', 'I'],
+    name: ['can', 'get', 'bring', 'give', 'i'],
     type: 'main',
-    help_text: 'Janet I need Eleanor Shellstrop\'s file',
+    help_text: 'Janet bring me Eleanor\'s file',
     help_desc: 'Maybe obtain Eleanor\'s file',
     owner: false,
     args: {},
