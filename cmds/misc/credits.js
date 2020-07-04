@@ -14,7 +14,7 @@ export async function run(message) {
 
 export const help = {
     name: ['credits', 'credit'],
-    type: 'main',
+    type: 'misc',
     help_text: 'credits',
     help_desc: 'Development credits',
     owner: false,

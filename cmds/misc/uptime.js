@@ -9,7 +9,7 @@ export async function run(message) {
 
 export const help = {
     name: 'uptime',
-    type: 'main',
+    type: 'misc',
     help_text: 'uptime',
     help_desc: 'Displays Janet\'s uptime',
     owner: false,

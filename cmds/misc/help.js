@@ -16,6 +16,7 @@ export async function run(message, args) {
             .setDescription('Use `-help syntax` for command syntax explanations\nJanet\'s prefixes are: ' + prefixes)
             .addField('main (`'+ cmdamount.filter(x => x.help.type === 'main').length + ' available`)', 'Janet\'s main features')  
             .addField('owner (`'+ cmdamount.filter(x => x.help.type === 'owner').length + ' available`)', 'Application owner only commands')    
+            .addField('misc (`'+ cmdamount.filter(x => x.help.type === 'misc').length + ' available`)', 'Miscellaneous commands')    
             .addField('Total amount:', `\`${cmdamount.length}\` commands available`)   
 
         return message.channel.send(help);
@@ -33,6 +34,7 @@ export async function run(message, args) {
     let type = '';
     if (args[0].match(/(?:main)/i)) type = 'main';
     else if (args[0].match(/(?:owner)/i)) type = 'owner';
+    else if (args[0].match(/(?:misc)/i)) type = 'misc';
     else return message.channel.send(Util.Embed().setTitle(`${args[0]} is not a valid argument!`));
 
     let commands = {};
@@ -142,7 +144,7 @@ export async function run(message, args) {
 
 export const help = {
     name: 'help',
-    type: 'main',
+    type: 'misc',
     help_text: 'help [syntax]',
     help_desc: 'Provides you help with commands',
     owner: false,

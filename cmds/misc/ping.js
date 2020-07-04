@@ -17,7 +17,7 @@ export async function run(message) {
 
 export const help = {
     name: ['ping', 'latency'],
-    type: 'main',
+    type: 'misc',
     help_text: 'ping',
     help_desc: 'Displays the Janet\'s ping',
     owner: false,
