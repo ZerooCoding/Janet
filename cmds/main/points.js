@@ -12,7 +12,7 @@ export async function run(message) {
 
     const embed = Util.Embed()
     .setTitle(score.next())
-    if (score.next().match(/[-]/i)) embed.setColor('#D7342A')
+    if (!score.next().match(/[-]/i)) embed.setColor('#D7342A')
 
     message.channel.send(embed);
 }
