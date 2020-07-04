@@ -75,7 +75,7 @@ class Util {
         return embed;
     }
 
-    static InitStatus() {
+    static async InitStatus() {
         let guilds = process.janet.shard ? await process.janet.shard.fetchClientValues('guilds.cache').catch(ex => console.log(ex)) : [process.janet.guilds.cache.size];
         if (guilds) guilds = [].concat.apply([], guilds);
         process.janet.user.setActivity(`${guilds.length} neighborhoods | -help`, { type: 'WATCHING' }); 
