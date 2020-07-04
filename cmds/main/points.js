@@ -5,7 +5,7 @@ import table from '../../data/constants/pointtable.js';
 /**
  * @param {Discord.Message} message
  */
-export async function run(message, args) {
+export async function run(message) {
     
     const random = RandomEnsure.RandomEnsure; //module import destructuring seems broken, this is a lil workaround
     const score = new random(table.points);
