@@ -16,7 +16,7 @@ Too see Janet in action, you can join the Soul Squad: [Join](https://discord.gg/
 <details>
   <summary>Screenshots</summary>
   
-<a href="https://i.imgur.com/6emTaUj.png"><img src="https://i.imgur.com/6emTaUj.png"/></a>
+<a href="https://i.imgur.com/FXiR8Rs.png"><img src="https://i.imgur.com/FXiR8Rs.png"/></a>
 <a href="https://i.imgur.com/A0WiMPA.png"><img src="https://i.imgur.com/A0WiMPA.png"/></a>
 <a href="https://i.imgur.com/P11vR5V.png"><img src="https://i.imgur.com/P11vR5V.png"/></a>
 <a href="https://i.imgur.com/mwkeeg7.png"><img src="https://i.imgur.com/mwkeeg7.png"/></a>
