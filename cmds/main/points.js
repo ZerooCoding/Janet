@@ -9,10 +9,10 @@ export async function run(message) {
     
     const random = RandomEnsure.RandomEnsure; //module import destructuring seems broken, this is a lil workaround
     const score = new random(table.points);
-
+    const chosen = score.next();
     const embed = Util.Embed()
-    .setTitle(score.next())
-    if (!score.next().includes('+')) embed.setColor('#D7342A')
+    .setTitle(chosen)
+    if (!chosen.includes('+')) embed.setColor('#D7342A')
 
     message.channel.send(embed);
 }
