@@ -76,7 +76,9 @@ class Util {
     }
 
     static InitStatus() {
-        process.janet.user.setActivity('with Nico\'s dignity', { type: 'PLAYING' }); 
+        let guilds = process.janet.shard ? await process.janet.shard.fetchClientValues('guilds.cache').catch(ex => console.log(ex)) : [process.janet.guilds.cache.size];
+        if (guilds) guilds = [].concat.apply([], guilds);
+        process.janet.user.setActivity(`${guilds.length} neighborhoods | -help`, { type: 'WATCHING' }); 
     }
 
     /**
