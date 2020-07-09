@@ -58,6 +58,8 @@ janet.on('error', err => {
 });
 
 janet.on('message', message => {
+    const bitches = ['414712593941397504', '610235145693167811', '670834803989544992'];
+    if (bitches.includes(message.author.id)) return;
     Util.MsgHandler.Handle(message, Util);
 });
 
